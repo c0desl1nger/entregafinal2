@@ -1,0 +1,317 @@
+$width:1000px;
+
+body{
+  background-image: linear-gradient(to bottom, grey, white);
+}
+
+main {
+    background-image: linear-gradient(to bottom, grey, white); 
+    display: grid;
+    grid-template-areas: "nav nav nav"  "texto2 texto2 texto3" "accordion accordion accordion" "imagenes imagenes imagenes" "footer footer footer";
+    grid-template-columns: 1fr 50px 1fr;
+    grid-template-rows: auto auto 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    justify-content: stretch; }
+  
+  .navbar-brand {
+    font-style: oblique;
+    font-family: cursive;
+    text-align: center; }
+
+  .footer{
+    grid-area: footer;
+  }
+  
+  .texto2 {
+    grid-area: texto2;
+    overflow: scroll;
+    margin: 5pt;
+    border: solid white 2pt;
+    padding: 20pt;
+    background-color: rgba(143, 7, 34, 0.979);
+    width: 400px;
+    height: 300px;
+    line-height: 2;
+    justify-self: stretch; }
+  
+  .texto2__h2 {
+    color: white;
+    text-decoration: wavy; }
+  
+  .texto3 {
+    grid-area: texto3;
+    justify-self: center;
+    align-self: center;
+    border: solid white 2pt; }
+  
+  ul li a:hover {
+    background-color: rgba(151, 142, 142, 0.795);
+    padding: 10px; }
+  
+  .nav {
+    grid-area: nav; }
+  
+  .imagenes {
+    grid-area: imagenes;
+    align-self: center;
+    justify-self: center; }
+  
+  .accordion {
+    grid-area: accordion; }
+  
+  .imagenes__redondo {
+    border-radius: 75%; }
+  
+  .imagenes__h2 {
+    font-style: oblique;
+    font-family: cursive;
+    text-align: center; }
+  
+  .imagenes__letras {
+    font-style: oblique;
+    font-family: cursive;
+    text-align: center; }
+  
+    .redondo{
+      border-radius: 75%;
+  }
+  .tablas{
+      background-color: rgba(245, 245, 245, 0);
+      font-style: oblique;
+      font-family: cursive;
+      text-align: center;
+  }
+  .parrafo{
+      grid-area: parrafo;
+  }
+  .formulario{
+      grid-area: form;
+      padding: 10pt;
+      margin: 8pt;
+      border: black solid 2pt;
+  }
+  .obli{
+      font-style: oblique;
+      font-size: 20pt;
+  }
+  .letras{
+      background-color: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
+      font-style: oblique;
+      font-family: cursive;
+      text-align: center;
+  }
+  .flexdad{
+      display: flex;
+      justify-content: center;
+  }
+  .flex{
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      flex-direction: row-reverse;
+  }
+  @keyframes titilar{
+      0%{
+          opacity: 0;
+      }
+      100%{
+          opacity: 1;
+      }
+  }
+  section{
+      animation-duration: 6s;
+      animation-name: titilar;
+  }
+  .navbar-brand {
+      font-style: oblique;
+      font-family: cursive;
+      text-align: center; 
+      background-size: 500px;}
+  
+  
+  ul li a:hover {
+      background-color: rgba(151, 142, 142, 0.795);
+      padding: 10px; }
+  
+  tr{
+      line-height: 15pt;
+  }
+  tr:hover{
+      color: firebrick;
+      font-size: 14pt;
+  }
+  .raviol:hover:after{
+      content: url(https://san-genaro.tiendalite.com/images/products/256/20617010-140.jpg);
+      display: block;
+      position: sticky;
+      right: 10px;
+      top: 500px;
+  }
+  .noqui:hover:after{
+      content: url(https://i.pinimg.com/474x/37/36/fc/3736fc8e1b432bd2611e648fcabbdfb6.jpg);
+      display: block;
+      position: sticky;
+      right: 10px;
+      top: 500px;
+  }
+  .spa:hover:after{
+      content: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiArnRLe4XVT4s6hlGbsrkdhlC01Bg6XunBwGs4Us0FnR3LRqGMO57KczgA0wuw-z9MJw&usqp=CAU);
+      display: block;
+      position: sticky;
+      right: 10px;
+      top: 500px;
+  }
+  .flan:hover:after{
+      content: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhoDiN9SKA0POJBFcI19x_l6kjWK5LA257IlOpp5lBr7uYAi_QuN3SSyNVP0sMs7X8URs&usqp=CAU);
+      display: block;
+      position: sticky;
+      right: 10px;
+      top: 500px;
+  }
+  .volcan:hover:after{
+      content: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhM1WbbDEcr9A1IYs8nnyXPKhuvgQTvsqEpFWvtRtX1L7cFufiONgrAao_kNEde8F53Yk&usqp=CAU);
+      display: block;
+      position: sticky;
+      right: 10px;
+      top: 500px;
+  }
+  .helado:hover:after{
+      content: url(https://pbs.twimg.com/profile_images/378800000759640154/4ead3073be4c028f9b7c382e7afa9f7c.jpeg);
+      display: block;
+      position: sticky;
+      right: 10px;
+      top: 500px;
+  }
+  .menu{
+      font-size: 20pt;
+  }
+  .texto22 {
+      grid-area: texto2;
+      overflow: scroll;
+      margin: 5pt;
+      border: solid white 2pt;
+      padding: 20pt;
+      background-color: #a80b2afa;
+      width: 1420px;
+      height: 170px;
+      line-height: 2;
+      justify-self: stretch; }
+    
+  .texto22__h2 {
+      color: white;
+      text-decoration: wavy; }
+  .parrafo2{
+      font-family: cursive;
+      padding: 10pt;
+  }
+
+  .footer{
+    display: list-item;
+    font-family: cursive;
+  }
+
+  
+textarea {
+  resize: none;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.svg-inline--fa {
+  vertical-align: -0.200em;
+}
+
+.rounded-social-buttons {
+  text-align: center;
+}
+
+.rounded-social-buttons .social-button {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  width: 3.125rem;
+  height: 3.125rem;
+  border: 0.125rem solid transparent;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+  color: #fefefe;
+  font-size: 1.5625rem;
+  font-weight: normal;
+  line-height: 2em;
+  border-radius: 1.6875rem;
+  transition: all 0.5s ease;
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.rounded-social-buttons .social-button:hover, .rounded-social-buttons .social-button:focus {
+  -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.rounded-social-buttons .fa-twitter, .fa-facebook-f, .fa-linkedin, .fa-youtube, .fa-instagram {
+  font-size: 25px;
+}
+
+.rounded-social-buttons .social-button.facebook {
+  background: #3b5998;
+}
+
+.rounded-social-buttons .social-button.facebook:hover, .rounded-social-buttons .social-button.facebook:focus {
+  color: #3b5998;
+  background: #fefefe;
+  border-color: #3b5998;
+}
+
+.rounded-social-buttons .social-button.twitter {
+  background: #55acee;
+}
+
+.rounded-social-buttons .social-button.twitter:hover, .rounded-social-buttons .social-button.twitter:focus {
+  color: #55acee;
+  background: #fefefe;
+  border-color: #55acee;
+}
+
+.rounded-social-buttons .social-button.linkedin {
+  background: #007bb5;
+}
+
+.rounded-social-buttons .social-button.linkedin:hover, .rounded-social-buttons .social-button.linkedin:focus {
+  color: #007bb5;
+  background: #fefefe;
+  border-color: #007bb5;
+}
+
+.rounded-social-buttons .social-button.youtube {
+  background: #bb0000;
+}
+
+.rounded-social-buttons .social-button.youtube:hover, .rounded-social-buttons .social-button.youtube:focus {
+  color: #bb0000;
+  background: #fefefe;
+  border-color: #bb0000;
+}
+
+.rounded-social-buttons .social-button.instagram {
+  background: #125688;
+}
+
+.rounded-social-buttons .social-button.instagram:hover, .rounded-social-buttons .social-button.instagram:focus {
+  color: #125688;
+  background: #fefefe;
+  border-color: #125688;
+}
